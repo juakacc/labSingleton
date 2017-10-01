@@ -1,20 +1,16 @@
 
 public class TrianguloRetangulo extends Triangulo {
 
-	private static TrianguloRetangulo instancia;
+	public static void registrarSub() {
+		new TrianguloRetangulo();
+	}
 	
 	private TrianguloRetangulo() {
-		
+		registrar("retangulo", this);
 	}
 	
 	@Override
 	public String toString() {
 		return "Triangulo Retangulo";
-	}
-
-	public static TrianguloRetangulo getInstance() {
-		if (instancia == null)
-			instancia = new TrianguloRetangulo();
-		return instancia;
 	}
 }

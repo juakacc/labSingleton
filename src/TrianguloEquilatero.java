@@ -13,5 +13,4 @@ public class TrianguloEquilatero extends Triangulo {
 	public String toString() {
 		return "Triangulo Equilatero";
 	}
-
 }

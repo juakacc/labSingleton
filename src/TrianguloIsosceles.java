@@ -2,12 +2,10 @@
 public class TrianguloIsosceles extends Triangulo {
 	
 	public static void registrarSub() {
-		System.out.println("Aquiii");
 		new TrianguloIsosceles();
 	}
 	
 	private TrianguloIsosceles() {
-		System.out.println("Entrou aqui");
 		registrar("Isosceles", this);
 	}
 	
@@ -15,12 +13,14 @@ public class TrianguloIsosceles extends Triangulo {
 	public String toString() {
 		return "Triangulo Isosceles";
 	}
+	
+	private int i;
+	
+	public void setValor(int value) {
+		this.i = value;
+	}
 
-//	public static TrianguloIsosceles getInstance() {
-//		if (instancia == null)
-//			instancia = new TrianguloIsosceles();
-//		return instancia;
-//	}
-	
-	
+	public int getValor() {
+		return i;
+	}
 }
